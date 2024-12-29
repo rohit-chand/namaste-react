@@ -1,0 +1,23 @@
+1. What is emmet?
+ Emmet is a feature by vs code for boilerplate code. Emmet expands the abbreviations into html tags and attributes.
+
+2. Difference between a library and framework?
+ Library is collention of resuable code whereas framework defines a set of rules and execution flow. 
+
+3. What is CDN? Why do we use it?
+ CDN stands for Content Delivery Network. They are servers which store the date of our websites in various locations around the world and send the data from the closest server to the user when requested resulting in faster loading times.
+
+4. Why React is known as React?
+ React is known as React because it reacts to the changes and updates the UI without refreshing the page.
+
+5. What is crossorigin in script tag?
+ crossorigin in script tag is used to enable CORS i.e. accessing the resources from different domain which is not allowed by browser by default
+
+6. What is difference between React and ReactDOM?
+ React library consists of functions for creating react elements whereas the ReactDOM has functions to interact with the browser DOM.
+
+7. What is difference between react.development.js and react.production.js files via CDN?
+ react.production.js is the minified version of the react.development.js and it only contains the important fuction required in production so that it size remains small.
+
+8. What is aysnc and defer?
+ They are boolean attributes used in script tag. In can of async, the html parsing continues and the script is also being fetch in parallel by browser and as the scripts are fetched, html parsing stops, script is executed and html parsing continues whereas in defer, the scripts are fetched in parallel but the scripts are executed only when the html parsing is completer. Also defer maintains the order of execution of scripts but async doesn't. 
