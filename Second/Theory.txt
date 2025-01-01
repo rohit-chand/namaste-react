@@ -1,0 +1,45 @@
+1. What is NPM ? 
+ npm is the package manager for js runtime node. It is the central registry of all node modules and facilitates downloading and publishing of node packages.
+
+2. What is parcel/webpack? Why do we need it? 
+ Parcel/Webpack are bundlers which provides a lot of features like HMR, Code optimisation, transpiling, caching etc and bundle the code into multiple optimised html, css and js files.
+
+3. What is '.parcel-cache' ? 
+ It the storage that parcel uses for building the code faster, parcel caches the code in it and keeps track of change so that it builds up faster next time.
+
+4. What is npx ? 
+ npx is a tool that is used to execute a particular node package locally, if not present in local, it will download it from npm registry and execute it.  
+
+5. What is the difference between dependencies and devDependencies?
+ The difference between them is that the devDependencies are not published to production server whereas the dependencies are published.
+
+6. What is tree shaking?
+ Tree shaking or dead code elimination is the removal of unused code to reduce the build size. It is also named so because when we shake the tree, the dead leaves fell off. 
+
+7. What is Hot Module Replacement? 
+ Hot Module Replacement is the technique by which the changes in code are automatically reflected in the UI without rebuilding the code and refreshing the page . It uses Code Watchers to find change and recompiles only the changed parts then it ships the changes in real time to browser through websockets and there the hmr realtime updates the UI according to the changes. 
+
+8. List down your favourite 5 superpowers of Parcel and describe any 3 of them in your own words. 
+ a. Tree shaking : Removing the used code. 
+ b. Caching : Storing the code for faster build times.
+ c. HMR : Updating the code changes in UI in real time.
+ d. Transpiling : Converting the code to support the older version of browser. 
+ e. Bundling : Bundling the code into optimised html, css and js files 
+
+9. What is gitignore? What should we add and not add into it?
+ gitignore is the file in which we add files/ folders that we don't want to pushed to the repo. We should any files that could be recreated on server to it and do not add the files which could not be reacreated.
+
+10. What is the difference between package.json and package-lock.json? 
+ The difference between them is that the package-lock.json contains the exact version of the dependencies and also contain the transitive dependencies wheres package.json also has the verison of dependencies but in range and it also contains additional information about the package like name of author, scripts, etc.
+
+11. Why should I not modify 'package-lock.json' ? 
+ It should not be modified because package-lock.json contains the exact version of dependencies that are required to run the project, making any change in it can cause compatibility issue between the packages resulting in failure to run the project. 
+
+12. What is node modules ? Is it a good idea to push that on git ? 
+ node modules contain the helper code that is used in our project. No it should not be pushed to git because it can be reproduced on the server using package.json and package-lock.json. 
+
+13. What is the dist folder? 
+ dist folder contains the build files generated of our project. They are the minified version of the code. 
+
+14. What is browserlists? 
+ browserlists helps us to add the browser that we want to support and our code will be modified accrodingly.

@@ -1,0 +1,30 @@
+{
+  "name": "second",
+  "version": "1.0.0",
+  "description": "igniting app",
+ 
+  "scripts": {
+    "test": "zest",
+    "start": "npx parcel index.html",
+    "build" : "npx parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohit-chand/namaste-react.git"
+  },
+  "author": "Rohit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohit-chand/namaste-react/issues"
+  },
+  "homepage": "https://github.com/rohit-chand/namaste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+ "browserslist" : ["last 2 versions"]
+}
