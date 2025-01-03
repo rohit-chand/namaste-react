@@ -1,0 +1,16 @@
+1. What is JSX? 
+ JSX is an extension of Javascript which lets us write the html like syntax in Javascript and the JSX code is converted to React element.
+
+2. What are superpowers of JSX? 
+ a. It helps us write HTML like syntax in JS. 
+ b. It makes the code easy to read.
+ c. It protects from XSS by sanitising the code. 
+ d. It enables us to write JS in between HTML like code using curly braces.
+
+3. What is the role of type attrbute in script tag? What options can be used there? 
+ The type attrbute in script helps browser to identify the type of scripts being imported. Options that can be used there are module, text/javascript, etc.
+
+4. {TitleComponent()} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>} in JSX
+ a. {TitleComponent()} : It will simply call the function and what it returns will be rendered and no react lifecycle hooks will be called and the state varaibles will be associated with parent component.
+ b. {<TitleComponent />} : The TitleComponent function will be called and it will return react element or react component.
+ c. {<TitleComponent></TitleComponent>} : This is also similar to above one but it is used mostly when have to pass Child Components to it, the content between will be passed as children.
