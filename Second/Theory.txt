@@ -11,7 +11,7 @@
  npx is a tool that is used to execute a particular node package locally, if not present in local, it will download it from npm registry and execute it.  
 
 5. What is the difference between dependencies and devDependencies?
- The difference between them is that the devDependencies are not published to production server whereas the dependencies are published.
+ The difference between them is that the devDependencies are not present in final build, they are just required for development and testing whereas the dependencies are published and required for application to run in production. 
 
 6. What is tree shaking?
  Tree shaking or dead code elimination is the removal of unused code to reduce the build size. It is also named so because when we shake the tree, the dead leaves fell off. 

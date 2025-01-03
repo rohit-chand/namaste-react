@@ -20,4 +20,4 @@
  react.production.js is the minified version of the react.development.js and it only contains the important fuction required in production so that it size remains small.
 
 8. What is aysnc and defer?
- They are boolean attributes used in script tag. In can of async, the html parsing continues and the script is also being fetch in parallel by browser and as the scripts are fetched, html parsing stops, script is executed and html parsing continues whereas in defer, the scripts are fetched in parallel but the scripts are executed only when the html parsing is completer. Also defer maintains the order of execution of scripts but async doesn't. 
+ They are boolean attributes used in script tag. In can of async, the html parsing continues and the script is also being fetch in parallel by browser and as the scripts are fetched, html parsing stops, script is executed and html parsing continues whereas in defer, the scripts are fetched in parallel but the scripts are executed only when the html parsing is complete. Also defer maintains the order of execution of scripts but async doesn't. 
