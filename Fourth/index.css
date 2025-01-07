@@ -1,0 +1,36 @@
+.logo {
+  width: 100px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+}
+li {
+  padding-right: 10px;
+}
+.restaurant-list {
+  margin: 15px 5px ;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.card {
+  width: 200px;
+  padding: 5px 15px;
+  border: 1px solid black;
+}
+.card > img{
+    width: 180px;
+    height: 150px;
+}
+.card > h3,h2{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

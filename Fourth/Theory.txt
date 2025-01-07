@@ -1,0 +1,27 @@
+1. Is JSX mandatory for React? 
+ No, it is not mandatory, we can create the React Elements using the React.createElement function.
+
+2. Is ES6 mandatory for React? 
+ No, we can create the React Components using function way which was used before ES6.
+
+3. How can we write comments in JSX ? 
+ We can write comments in JSX same as JS but inside {} and use // for single line comment and /*....*/ for multi-line comments.
+
+4. What is <React.Fragment></React.Fragment> and <></> ? 
+ React.Fragment is component from react which helps us create empty element and it doesn't appear on DOM. <></> is its shorthand.
+
+5. What is Virtual DOM?
+ Virtual DOM is the in-memory representation of the actual DOM tree and synced with DOM using React DOM. As it is a JS object, making changes in it is very fast as compared to actual DOM. 
+
+6. What is Reconciliation in React ? 
+ Reconciliation is the process of checking the changes in Virtual DOM and real DOM, it is done as a copy of last Virtual DOM which was rendered to DOM is maintained and that copy is matched with the updated Virtual DOM and the diffing algorithm finds the minimum steps to update the DOM and the DOM is updated in the most efficient way possible.
+
+7. What is React Fiber? 
+ React Fiber is the reimplementation stack for React components. A single React fiber can be considered as a virtual stack frame. It is the unit of work. React Fiber is a JS object that contains information about component, its input and output. So it corresponds to both a stack frame and component instance. Some important fields of fiber are : 
+ a. type and key : They are the copy of the type and key of React element, type is the function whose execution is being tracked in stack frame, key helps in determining whether the fiber can be reused.
+ b. child and sibling : They point to other fibers, child contains the information of child elements and the child fibers form a singly linked list whose head is first child and the sibling stores the information of next sibling.
+ c. return : It the fiber to which the program should return after processing the current one. It is mostly the parent fiber.
+ d. pendingProps and memoizedProps : pendingProps are the incoming function arguments and memoizedProps are also the arguments but they are set at the end. If pendingProps are same are memoizedProps then the fiber's previous output is reused.
+ e. pendingWorkPriority : It is priority of work represented by fiber. Scheduler used the priority field to search the next unit of work to perform.
+
+
